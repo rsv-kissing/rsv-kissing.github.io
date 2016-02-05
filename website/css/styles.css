@@ -1,0 +1,25 @@
+/* content */
+.text-header { font-weight: bold; font-size: 10pt; font-family: Tahoma, sans-serif; color: #484B54; text-transform: uppercase; }
+.pageContent { font-size: 8pt; font-family: Tahoma, sans-serif; color: #818181; }
+ .pageContent a { font-size: 8pt; font-family: Tahoma, sans-serif; color: #818181; }
+
+/* top elements */
+.company { font-weight: bold; font-size: 11pt; font-family: Tahoma, sans-serif; color: #484A53; text-transform: uppercase; }
+.slogan { font-size: 7pt; font-family: Tahoma, sans-serif; color: #97999E; text-transform: uppercase; }
+
+/*main menu*/
+.menu { font-size: 8pt; font-family: Tahoma, sans-serif; color: #595959; text-decoration: none; text-transform: uppercase; }
+.amenu { font-weight: bold; font-size: 8pt; font-family: Tahoma, sans-serif; color: #595959; text-decoration: none; text-transform: uppercase; }
+
+/*submenu*/
+.submenu { font-size: 8pt; font-family: Tahoma, sans-serif; color: #595959; text-decoration: none; }
+.asubmenu { font-weight: bold; font-size: 8pt; font-family: Tahoma, sans-serif; color: #595959; text-decoration: none; }
+
+/*copyright*/
+.footer { font-size: 8pt; font-family: Tahoma, sans-serif; color: #8D8D8D; }
+
+/*backgrounds*/
+.main-bg { background-color: #ffffff; }
+.menu-bg { background-color: #BA1E26; }
+.submenu-bg { background-color: #F9A3A7; }
+
