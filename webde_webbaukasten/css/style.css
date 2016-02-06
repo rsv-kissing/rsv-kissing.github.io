@@ -328,14 +328,7 @@ input {
 
 table, caption, tbody, tfoot, thead, tr, th, td 
 {
-	border: 1px solid #808080;
-	padding: 3px 5px;
-	border-width: 1px 1pt 1pt; 
-	border-style: none solid solid; 
-	border-color: #000000 windowtext windowtext; 
-	padding: 0cm 5.4pt; 
-	width: 359.8pt; 
-	background-color: transparent; 
+	padding: 0px 5px 0px 5px;
 }
 
 table {
