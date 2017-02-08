@@ -655,7 +655,7 @@ body { background-attachment: fixed; }
 
 #footer-content { position: relative; }
 
-#header-content, #footer-content {
+#header-content, #footer-content, #layout-header, #layout-footer {
     min-height: 24px;
     height: auto;
 }
@@ -1263,6 +1263,8 @@ div[style*="chrome-extension://gofhjkjmkpinhpoiabjplobcaignabnl"] { box-sizing: 
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 body {
