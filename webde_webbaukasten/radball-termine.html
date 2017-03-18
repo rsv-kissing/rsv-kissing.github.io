@@ -28,11 +28,16 @@
             border-right: 1px solid;
         }
 
-            tr.skipline {
-                border-style: solid none solid none;
-                border-width: 1px 0 1px 0;
-                font-size: 9px;
-            }
+        table tr.skipline + tr + tr td:nth-child(1),
+        table tr:nth-child(2) td:nth-child(1){
+            padding-right: 20px;
+        }
+            
+        tr.skipline {
+            border-style: solid none solid none;
+            border-width: 1px 0 1px 0;
+            font-size: 9px;
+        }
     </style>
     <script type="text/javascript" src="/js/css_browser_selector.js"></script>
     <link type="text/css" href="/modules/navigation/navigation.css?template=generic" rel="stylesheet" />
@@ -146,16 +151,60 @@
                                                                 <h2 style="margin-bottom: 30px">Termine - Radball:</h2>
 
                                                                 <table valign="top" style="table-layout: fixed">
+                                                                    <colgroup>
+                                                                        <col/>
+                                                                        <col/>
+                                                                        <col style="min-width: 100px"/>
+                                                                    </colgroup>
                                                                     <tbody>
-                                                                        <tr><td colspan="3"><h4>Samstag, 25.03.2017</h4></td></tr>
-                                                                        <tr><td colspan="2"><p>Bundsligaturnier (1. + 2. Liga) in Kemnat, Beginn 14:00 Uhr</p></td><td></td></tr>
-                                                                        <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr>
-                                                                        <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+                                                                    <tr><td colspan="3"><h4>Samstag, 25.03.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>Bundsligaturnier (1. + 2. Liga) in Kemnat, Beginn 14:00 Uhr</p></td><td></td></tr>
+                                                                    <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
 
-                                                                        <tr><td colspan="3"><h4>Samstag, 25.03.2017</h4></td></tr>
-                                                                        <tr><td colspan="2"><p>6. Spieltag Bayernliga in Bechhofen, Beginn 15:00 Uhr</p></td><td></td></tr>
-                                                                        <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr>
-                                                                        <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+                                                                    <tr><td colspan="3"><h4>Samstag, 25.03.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>6. Spieltag Bayernliga in Bechhofen, Beginn 15:00 Uhr</p></td><td></td></tr>
+                                                                    <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+
+                                                                    <tr><td colspan="3"><h4>Samstag, 01. oder Sonntag, 02.04.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>Bayernpokal U23</p></td><td></td></tr>
+                                                                    <tr><td>Kissing</td><td>Pongratz-Grießer</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+
+                                                                    <tr><td colspan="3"><h4>Freitag, 07. - Samstag, 08.04.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>B-Kader in Frankfurt</p></td><td></td></tr>
+                                                                    <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+
+                                                                    <tr><td colspan="3"><h4>Samstag, 09.04.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>Schwäbische Meisterschaft Elite, Beginn 10:00 Uhr</p></td><td></td></tr>
+                                                                    <tr><td>Kissing 2</td><td>Brunner-Keller</td><td></td></tr>
+                                                                    <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr>
+                                                                    <tr><td>Kissing 4</td><td>Colditz-Hartl</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+
+                                                                    <tr><td colspan="3"><h4>Samstag, 29.04.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>4. Spieltag 2. Bundesliga in Kemnat, Beginn 14:00 Uhr</p></td><td></td></tr>
+                                                                    <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td>Tippner</td></tr>
+                                                                    <tr><td>Kissing 2</td><td>Pongratz-F. Keller</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
+
+                                                                    <tr><td colspan="3"><h4>Samstag, 29.04.2017</h4></td></tr>
+                                                                    <tr><td colspan="2">
+                                                                        <p>6. Spieltag Landesliga in Kissing, Beginn 15:00 Uhr</p></td><td></td></tr>
+                                                                    <tr><td>Kissing 4</td><td>Hartl-Colditz</td><td></td></tr>
+                                                                    <tr><td>Kissing 5</td><td>Doll-Hartmond</td><td></td></tr>
+                                                                    <tr><td>Kissing 6</td><td>Kieferle-Dosch</td><td></td></tr>
+                                                                    <tr><td>Kissing 7</td><td>Menzinger-Menzinger</td><td></td></tr>
+                                                                    <tr><td colspan="2">Schiedsricheter: 2 x Kissing, Brunner, A. Keller</td><td></td></tr>
+                                                                    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
                                                                     </tbody>
                                                                 </table>
                                                             </div>
