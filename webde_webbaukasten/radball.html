@@ -56,6 +56,23 @@
         }
 
         .achievements { display: none }
+
+        table.Trainingszeiten {
+            font-size: small; 
+            font-weight: bold;
+        }
+        table.Trainingszeiten tr:first-child{
+            font-size: large;
+            font-weight: bold;
+        }
+        table.Trainingszeiten tr:first-child + tr {
+            font-weight: normal;
+            border-bottom: solid 8px white ;
+            text-align: center;
+        }
+        table.Trainingszeiten tr td:first-child {
+            padding-right: 12px;
+        }
     </style>
 
     <script type="text/javascript" src="/js/css_browser_selector.js"></script>
@@ -131,34 +148,51 @@
 <div class="widget widget-text " id="widget-4553143f-3e8b-a4fe-c391-46d43c346ee7">
 <div class="widget-content">
 <h2>Radball</h2>
-<table style="font-size: small; font-weight: bold">
+<table>
     <tr>
-        <td colspan="2" style="margin-bottom: 4px">Trainingszeiten in der Paartalhalle</td>
-    </tr>
-    <tr>
-        <td>Radball Junioren/Elite:</td>
-    </tr>
-    <tr style="font-weight: normal">
-        <td>Montag</td>
-        <td>19:00 - 22:00</td>
-    </tr>
-    <tr style="font-weight: normal">
-        <td>Mittwoch</td>
-        <td>19:30 - 22:00</td>
-    </tr>
-    <tr>
-        <td colspan="2">&nbsp;</td>
-    </tr>
-    <tr>
-        <td>Nachwuchs:</td>
-    </tr>
-    <tr style="font-weight: normal">
-        <td>Mittwoch</td>
-        <td>18:00 - 19:30</td>
-    </tr>
-    <tr style="font-weight: normal">
-        <td>Freitag</td>
-        <td>17:00 - 19:00</td>
+        <td>
+            <table class="Trainingszeiten">
+                <tr>
+                    <td colspan="2">Trainingszeiten in der Paartalhalle</td>
+                    <td colspan="2">Trainingszeiten in der Mehrzweckhalle</td>
+                </tr>
+                <tr >
+                    <td colspan="2">bis 21. Mai</td>
+                    <td colspan="2">22. Mai bis Mitte September</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Radball Junioren/Elite:</td>
+                </tr>
+                <tr style="font-weight: normal">
+                    <td>Montag</td>
+                    <td>19:00 - 22:00 Uhr</td>
+                    <td>Montag</td>
+                    <td>19:30 - 22:00 Uhr</td>
+                </tr>
+                <tr style="font-weight: normal">
+                    <td>Mittwoch</td>
+                    <td>19:30 - 22:00 Uhr</td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>Nachwuchs:</td>
+                </tr>
+                <tr style="font-weight: normal">
+                    <td>Mittwoch</td>
+                    <td>18:00 - 19:30 Uhr</td>
+                    <td>Montag</td>
+                    <td>18:00 - 19:30 Uhr</td>
+                </tr>
+                <tr style="font-weight: normal">
+                    <td>Freitag</td>
+                    <td>17:00 - 19:00 Uhr</td>
+                    <td>Samstag</td>
+                    <td>09:00 - 11:00 Uhr</td>
+                </tr>
+            </table>
+        </td>
     </tr>
 </table>
 
