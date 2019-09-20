@@ -1,0 +1,15 @@
+# This is a sample build configuration for Docker.
+# Check our guides at https://confluence.atlassian.com/x/O1toN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    master:
+      - step:   
+          services:
+            - docker
+          script: 
+            - docker run --rm -v $(pwd):/repo mwienk/docker-git-ftp git ftp push -u $FTP_USER ftp://home301376823.1and1-data.host -p $FTP_PASSWD -v
