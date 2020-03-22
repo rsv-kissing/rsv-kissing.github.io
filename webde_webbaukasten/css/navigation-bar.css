@@ -65,6 +65,10 @@
 			padding: 6px 10px 7px 10px;
 		}
 
+
+		
+		
+
 		#navigation-bar > li.normal > a { color: #2e2e2e;}
 		#navigation-bar > li.normal > a { background-color: transparent; } #navigation-bar > li.normal > a { background-image: none; }
 		#navigation-bar li.selected > a, #navigation-bar li.childselected > a { color: #4F5B67; }

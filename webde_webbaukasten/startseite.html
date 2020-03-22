@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+  <head>
+
+    <!-- Metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Webauftritt des Radsportvereins Kissing"/>
+    <meta name="keywords" content="Radball Kunstrad Hallenradsport Radsport"/>
+    
+    <title>Startseite - Radsportverein Kissing</title>
+
+    <!-- Include html -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- Style for navigation bar -->
+    <link type="text/css" rel="stylesheet" href="/css/navbar.css" />
+
+    <!-- Style for responsive navigation bar (only needed for responsive navbar; ACHTUNG: Drittanbietercookie -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    
+    <!-- <script type="text/javascript">var fixHeightColumns = true;</script> -->
+    <!-- <link type="text/css" href="/css/layout.css" rel="stylesheet"/> -->
+    <!-- <script type="text/javascript">var siteBuilderJs = jQuery.noConflict(true);</script> -->
+    <!-- <script type="text/javascript" src="/js/helpers.js"></script> -->
+    <!-- <script type="text/javascript" src="/js/view.js"></script> -->
+
+    <style>
+      .header {
+      padding: 80px; /* some padding */
+      text-align: center; /* center the text */
+      background: #1abc9c; /* green background */
+      color: white; /* white text color */
+      }
+
+      /* Increase the font size of the <h1> element */
+	.header h1 {
+	font-size: 40px;
+	}
+    </style>
+    
+  </head>
+
+<!-- Begin body -->
+  <body>
+
+    <div class="header">
+      <h1>Radsportverein Kissing</h1>
+      <p>Radball und Kunstrad</p>
+    </div> 
+    
+    <div w3-include-html="navigation-bar.html"></div>
+    
+    <div class="content">
+      <h2>Responsive Sidebar Example</h2>
+      <p>This example use media queries to transform the sidebar to a top navigation bar when the screen size is 700px or less.</p>
+      <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+      <h3>Resize the browser window to see the effect.</h3>
+    </div>
+
+
+
+    <!-- Include html files -->
+    <script>
+      w3IncludeHTML();
+    </script>
+
+    <!-- Responsive topbar -->
+    <script>
+      function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+      x.className += " responsive";
+      } else {
+      x.className = "topnav";
+      }
+      }
+    </script>
+
+  </body>
+
+</html>
+  
