@@ -10,18 +10,13 @@
     <link type="text/css" rel="stylesheet" href="/css/style.css"/>
     <link type="text/css" rel="stylesheet" href="/styles.css"/>
 
-    <script type="text/javascript" src="/js/css_browser_selector.js"></script>
     <link type="text/css" href="/modules/navigation/navigation.css" rel="stylesheet"/>
     <script type="text/javascript" src="/components/jquery/jquery.min.js?ac=12.0.7_2012073117"></script>
     <link type="text/css" href="/css/header-fd0e91a0-c5ae-0299-445e-717796184e69.css" rel="stylesheet"/>
     <link type="text/css" href="/css/text-db762d71-3719-114a-3d9b-07165f7f0563.css" rel="stylesheet"/>
     <link type="text/css" href="/modules/text/text.css" rel="stylesheet"/>
     <script type="text/javascript" src="/modules/text/text.js?ac=12.0.7_2012073117"></script>
-    <link type="text/css" href="/css/text-775cd770-66de-9710-85fe-2bc8a1b86e6e.css" rel="stylesheet"/>
-    <link type="text/css" href="/css/text-c249d5bb-3b31-a067-589a-b0fbfcb3722a.css" rel="stylesheet"/>
-    <link type="text/css" href="/css/navigation-eefda895-174c-a8a8-6603-42455060c501.css" rel="stylesheet"/>
-    <link type="text/css" href="/css/text-d2699b7f-99b3-27b2-7c76-4b006cf49039.css" rel="stylesheet"/>
-    <link type="text/css" href="/css/text-8f7f1725-6cf1-c346-b292-bfd149a6e5a7.css" rel="stylesheet"/>
+    <link type="text/css" href="/css/navigation-bar.css" rel="stylesheet"/>
     <script type="text/javascript">var fixHeightColumns = true;</script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <link type="text/css" href="/css/layout.css" rel="stylesheet"/>
@@ -31,46 +26,47 @@
     <script type="text/javascript" src="/js/view.js"></script>
 
 </head>
-<body id="template" class="">
-<div class="unsupported">Ihre Browserversion ist veraltet. Wir empfehlen, Ihren Browser auf die neueste Version zu aktualisieren.</div>
-<div id="page">
-<div id="layout" class="pageContentText">
-<div id="layout-header">
-    <div id="header" class="container header border-none container-empty">
-        <div id="header-side" class="side">
-            <div id="header-side2" class="side2">
-                <div class="container-content">
-                    <div id="header-content">
-                        <div class="container-content-inner" id="header-content-inner"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="layout-content">
-<div id="columns">
-<div id="column1" class="container column1 column column-left border-none">
-    <div w3-include-html="../snippets/menu.html"></div>
-</div>
 
-<div id="content" class="container content border-none">
-<div id="content-top" class="top">
-    <div>
-        <div></div>
-    </div>
-</div>
-<div id="content-side" class="side">
-<div id="content-side2" class="side2">
-<div class="container-content">
-<div style="background-color: #d1d1d1" id="content-content">
-<div style="" class="container-content-inner" id="content-content-inner">
-    <div class="widget widget-header " id="widget-fd0e91a0-c5ae-0299-445e-717796184e69">
-        <div class="widget-content">
-            <div class="header-image"></div>
-        </div>
-    </div>
-</div>
+
+<body id="template" class="">
+  <div id="page">
+    <div id="layout" class="pageContentText">
+      <div id="layout-header">
+	<div id="header" class="container header border-none container-empty">
+          <div id="header-side" class="side">
+            <div id="header-side2" class="side2">
+              <div class="container-content">
+                <div id="header-content">
+                  <div class="container-content-inner" id="header-content-inner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+	</div>
+      </div>
+      <div id="layout-content">
+	<div id="columns">
+	  <div id="column1" class="container column1 column column-left border-none">
+	    <div w3-include-html="../snippets/menu.html"></div>
+	  </div>
+
+	  <div id="content" class="container content border-none">
+	    <div id="content-top" class="top">
+	      <div>
+		<div></div>
+	      </div>
+	    </div>
+	    <div id="content-side" class="side">
+	      <div id="content-side2" class="side2">
+		<div class="container-content">
+		  <div style="background-color: #d1d1d1" id="content-content">
+		    <div style="" class="container-content-inner" id="content-content-inner">
+		      <div class="widget widget-header " id="widget-fd0e91a0-c5ae-0299-445e-717796184e69">
+			<div class="widget-content">
+			  <div class="header-image"></div>
+			</div>
+		      </div>
+		    </div>
 
 
 <!-- Kurzübersicht der Termine auf der Startseite.  -->
@@ -501,7 +497,7 @@
         <div id="footer-side" class="side">
             <div id="footer-side2" class="side2">
                 <div class="container-content">
-    n                <div id="footer-content">
+                    <div id="footer-content">
                         <div class="container-content-inner" id="footer-content-inner">
                             <div class="widget widget-text " id="widget-8f7f1725-6cf1-c346-b292-bfd149a6e5a7">
                                 <div class="widget-content"></div>
@@ -536,7 +532,7 @@
         $.addImagesAnimation('#widget-c249d5bb-3b31-a067-589a-b0fbfcb3722a');
         $("#navigation-toggle-eefda895-174c-a8a8-6603-42455060c501").click(function(e) {
             e.preventDefault();
-            $("#navigation-eefda895-174c-a8a8-6603-42455060c501").slideToggle();
+            $("#navigation-bar").slideToggle();
         });
         $.addImagesAnimation('#widget-d2699b7f-99b3-27b2-7c76-4b006cf49039');
         $.addImagesAnimation('#widget-8f7f1725-6cf1-c346-b292-bfd149a6e5a7');
