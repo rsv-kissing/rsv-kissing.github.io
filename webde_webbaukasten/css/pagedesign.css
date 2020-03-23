@@ -44,6 +44,12 @@ body {
     border-radius: 4px
 }
 
+@media screen and (max-width: 800px) {
+    .header {
+	font-size: 20px;
+    }
+}
+
 img {
     border-radius: 4px;
 }
