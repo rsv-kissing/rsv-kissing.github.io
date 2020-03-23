@@ -8,10 +8,9 @@
     <meta name="description" content="Webauftritt des Radsportvereins Kissing"/>
     <meta name="keywords" content="Radball Kunstrad Hallenradsport Radsport"/>
 
-    <!-- Teste Bloglayout -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Kunstrad - Radsportverein Kissing</title>
+    <title>Mitgliedsbeiträge - Radsportverein Kissing</title>
 
     <!-- Include html -->
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
@@ -22,60 +21,71 @@
     <!-- Style for page -->
     <link type="text/css" rel="stylesheet" href="/css/pagedesign.css" />
 
-    <!-- Style for table Trainingszeiten -->
-    <link type="text/css" rel="stylesheet" href="/css/trainingszeiten.css" />
-
     
     <!-- Style for responsive navigation bar (only needed for responsive navbar; ACHTUNG: Drittanbietercookie -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
-    <!-- <style type="text/css"> -->
-    <!--   table.Trainingszeiten { -->
-    <!--   font-weight: bold; -->
-    <!--   } -->
-    <!-- </style> -->
+    <style>
+      table {
+      border-collapse: separate;
+      border-spacing: 10px;
+      margin-left: -10px;
+      line-height: 1.1;
+      }
+    </style>
 
   </head>
 
-<!-- Begin body -->
+  <!-- Begin body -->
   <body>
 
     <!-- header and navigation bar -->
     <div w3-include-html="kopfleiste.html"></div>
 
+    
+    <h2>Mitgliedsbeiträge</h2>
 
-    <!-- Trainingszeiten Kunstrad -->
 
-    <h2>Kunstradfahren</h2>
-    <table class="Trainingszeiten">
+    <table>
+      <colgroup>
+        <col style="width: 350px"/>
+        <col />
+      </colgroup>
       <tr>
-        <td colspan="4" style="margin-bottom: 4px">Trainingszeiten in der Paartalhalle</td>
+        <td>Erwachsenes Mitglied</td><td>54,00 &euro;</td>
       </tr>
-      <tr style="font-weight: normal; border:none">
-        <td>Mittwoch</td>
-        <td style="text-align: right">18:00</td>
-        <td>&nbsp;-</td>
-        <td>20:00</td>
+      <tr>
+        <td>Ehepartner / Partner (bei gleichem Wohnsitz)</td><td>30,00 &euro;</td>
       </tr>
-      <tr style="font-weight: normal; border:none">
-        <td>Samstag</td>
-        <td style="text-align: right">8:00</td><td>&nbsp;-</td><td style="text-align:left"> 11:00</td>
+      <tr>
+        <td>Kinder / Jugendliche bis 18 Jahre</td><td>30,00 &euro;</td>
+      </tr>
+      <tr>
+        <td>Ehrenmitglieder</td><td>30,00 &euro;</td>
+      </tr>
+      <tr>
+        <td>Familienbeitrag<br/>(Erwachsene und eigene Kinder bis 18 Jahre)</td><td>100,00 &euro;</td>
       </tr>
     </table>
-
+    <p>&nbsp;</p>
+    <p>Stichtag für die Beitragsrechnung ist jeweils der 01. Januar des Jahres</p>
+    <p>Gläubiger-ID-Nummer: DE69ZZZ00000893552</p>
+    <p>Einzugstermin: 01. Februar des Jahres*</p>
+    <p>*oder am nächsten Bankenarbeitstag</p>
 
 
     
     <!-- Fußleiste -->
     <div w3-include-html="fussleiste.html"></div>
 
-    
+
     <!-- Scripts -->
     
     <!-- Include html files -->
     <script>
       w3IncludeHTML();
     </script>
+
 
     <!-- Only needed for Responsive topbar -->
     <!-- <script> -->
@@ -92,4 +102,4 @@
   </body>
 
 </html>
-  
+

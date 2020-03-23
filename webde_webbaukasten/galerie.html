@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+  <head>
+
+    <!-- Metadata -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Webauftritt des Radsportvereins Kissing"/>
+    <meta name="keywords" content="Radball Kunstrad Hallenradsport Radsport"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Galerie - Radsportverein Kissing</title>
+
+    <!-- Include html -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- Style for navigation bar -->
+    <link type="text/css" rel="stylesheet" href="/css/navbar.css" />
+
+    <!-- Style for page -->
+    <link type="text/css" rel="stylesheet" href="/css/pagedesign.css" />
+
+    
+    <!-- Style for responsive navigation bar (only needed for responsive navbar; ACHTUNG: Drittanbietercookie -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+
+      body {
+      margin: 0;
+      font-family: Arial;
+      }
+
+      .header {
+      text-align: center;
+      padding: 32px;
+      }
+
+      .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+      }
+
+      .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 1300px) {
+      .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+      }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+      .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+      }
+      }
+    </style>
+
+    
+  </head>
+
+  <!-- Begin body -->
+  <body>
+
+    <!-- header and navigation bar -->
+    <div w3-include-html="kopfleiste.html"></div>
+
+    
+    <h2>Galerie</h2>
+
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+	<img src="/attachments/Image/Elite_3.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Junioren-U19_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Jugend-U17_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U13_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U15_2.JPG" style="width:100%"/>
+      </div>
+      <div class="column">
+	<img src="/attachments/Image/Junioren-U19_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Jugend-U17_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U13_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U15_2.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Elite_3.JPG" style="width:100%"/>
+      </div>
+      <div class="column">
+	<img src="/attachments/Image/Jugend-U17_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U13_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U15_2.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Elite_3.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Junioren-U19_1.JPG" style="width:100%"/>
+      </div>
+      <div class="column">
+	<img src="/attachments/Image/Schueler-U13_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Schueler-U15_2.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Elite_3.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Junioren-U19_1.JPG" style="width:100%"/>
+	<img src="/attachments/Image/Jugend-U17_1.JPG" style="width:100%"/>
+      </div>
+    </div>
+
+
+    
+    <!-- Fußleiste -->
+    <div w3-include-html="fussleiste.html"></div>
+
+
+    <!-- Scripts -->
+    
+    <!-- Include html files -->
+    <script>
+      w3IncludeHTML();
+    </script>
+
+
+    <!-- Only needed for Responsive topbar -->
+    <!-- <script> -->
+    <!--   function myFunction() { -->
+    <!--   var x = document.getElementById("myTopnav"); -->
+    <!--   if (x.className === "topnav") { -->
+    <!--   x.className += " responsive"; -->
+    <!--   } else { -->
+    <!--   x.className = "topnav"; -->
+    <!--   } -->
+    <!--   } -->
+    <!-- </script> -->
+    
+  </body>
+
+</html>
+
