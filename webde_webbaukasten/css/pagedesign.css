@@ -11,10 +11,13 @@ body {
 
 /* Header/Blog Title */
 .header {
+    overflow: hidden;
     padding: 30px;
     font-size: 40px;
     text-align: center;
-    background: white;
+    /* background: white; */
+    background: green;
+    border-radius: 4px 4px 0px 0px;
 }
 
 
@@ -38,6 +41,7 @@ body {
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+    border-radius: 4px
 }
 
 img {

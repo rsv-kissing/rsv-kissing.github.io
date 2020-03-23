@@ -10,6 +10,7 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-radius: 0px 0px 4px 4px;
 }
 
 ul.topnav li {float: left;}
