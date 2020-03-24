@@ -1,0 +1,3 @@
+Dies ist eine alte Version der Webseite, die nicht mehr online ist.
+Dieser Ordner enthält alle Daten dieser Webseite mit Ausnahme der im
+Verzeichnis attachments (eine Hierarchieabene höher) gespeicherten Medien.
