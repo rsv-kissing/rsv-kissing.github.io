@@ -66,6 +66,46 @@ body {
     border-radius: 4px;
 }
 
+/* Begin Slideshow */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    overflow:hidden;
+    position: relative;
+    margin: auto;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    height: 32vw;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 800px) {
+    .fade {
+	height:85vw;
+    }
+}
+/* Ende Slideshow */
+
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   

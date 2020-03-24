@@ -32,6 +32,7 @@
     <!-- <script type="text/javascript" src="/js/helpers.js"></script> -->
     <!-- <script type="text/javascript" src="/js/view.js"></script> -->
 
+    
 
   </head>
 
@@ -90,28 +91,51 @@
 	  </div>
 	</div>
 	
-	<div class="card">
-	  <h3>Ältere Blogeinträge</h3>
-	  <div class="fakeimg">Image</div><br>
-	  <div class="fakeimg">Image</div><br>
-	  <div class="fakeimg">Image</div>
-	</div>
+	<!-- <div class="card"> -->
+	<!--   <h3>Ältere Blogeinträge</h3> -->
+	<!--   <div class="fakeimg">Image</div><br> -->
+	<!--   <div class="fakeimg">Image</div><br> -->
+	<!--   <div class="fakeimg">Image</div> -->
+	<!-- </div> -->
 	
 	<div class="card">
 	  <h3>Probetraining</h3>
-	  <p>Some text..</p>
+	  <p>Informationen zu Probetrainings.</p>
 	</div>
 
+	
+	<!-- <div class="card"> -->
+	<!--   <h3>Follow Me</h3> -->
+	<!--   <p>Some text..</p> -->
+	<!-- </div> -->
+
+	
 	<div class="card">
 	  <h3>Diashow</h3>
-	  <p>Some text..</p>
+	  <!-- Bilder in der Diashow müssen alle das selbe Format haben, also etwa quadratisch. -->
+	  <div class="slideshow-container">
+
+	    <div class="mySlides fade">
+	      <img src="/attachments/Logo/logo_highres.jpg" style="max-width: 100%" />
+	    </div>
+	    
+	    <div class="mySlides fade">
+	      <img src="/attachments/Image/20200308_reduced.JPG" style="width:100%"/>
+	    </div>
+	    
+	    <div class="mySlides fade">
+	      <img src="/attachments/Image/20200229_reduced.jpg" style="width:100%"/>
+	    </div>
+
+	    <div class="mySlides fade">
+	      <img src="/attachments/Image/20200208_reduced.JPG" style="width:100%"/>
+	    </div>
+
+	  </div>
+
 	</div>
 
-	<div class="card">
-	  <h3>Follow Me</h3>
-	  <p>Some text..</p>
-	</div>
-
+	
       </div>
 
       
@@ -204,6 +228,24 @@
     </script>
 
 
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		      }
+		      slideIndex++;
+		      if (slideIndex > slides.length) {slideIndex = 1}    
+			slides[slideIndex-1].style.display = "block";  
+			setTimeout(showSlides, 4000); // Change image every 4 seconds
+			}
+			</script>
+
+    
     <!-- Only needed for Responsive topbar -->
     <!-- <script> -->
     <!--   function myFunction() { -->
