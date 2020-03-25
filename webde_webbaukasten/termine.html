@@ -1,30 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+<html lang="de">
   <head>
 
     <!-- Metadata -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Webauftritt des Radsportvereins Kissing"/>
     <meta name="keywords" content="Radball Kunstrad Hallenradsport Radsport"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!-- Titel -->
     <title>Termine - Radsportverein Kissing</title>
 
     <!-- Include html -->
     <script src="js/einfuegen.js"></script>
 
-    <!-- Style for navigation bar -->
-    <link type="text/css" rel="stylesheet" href="/css/navbar.css" />
-
-    <!-- Style for page -->
-    <link type="text/css" rel="stylesheet" href="/css/pagedesign.css" />
+    <!-- Style for homepage -->
+    <link type="text/css" rel="stylesheet" href="/css/style-rsv.css" />
 
     
-    <!-- Style for responsive navigation bar (only needed for responsive navbar; ACHTUNG: Drittanbietercookie -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
     <!-- Style table -->
     <style>
       table {
@@ -40,7 +34,7 @@
 
       table#t01 th {padding: 8px;}
       table#t01 td {padding: 8px;}
-      table#t01 tr:nth-child(even){background-color: #ffffff}
+      table#t01 tr:nth-child(even){background-color: #f1f1f1}
 
       .datesTable {
       border-style: solid none solid none;
@@ -78,7 +72,7 @@
     <!-- Style collapsible -->
     <style>
       .collapsible {
-      background-color: #777;
+      background-color: #333;
       color: white;
       cursor: pointer;
       padding: 18px;
@@ -111,7 +105,7 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
+      background-color: white;
       }
     </style>
     
@@ -124,243 +118,40 @@
     <!-- header and navigation bar -->
     <div w3-include-html="kopfleiste.html"></div>
     
+    <div class="card">
+      <h2>Termine</h2>
 
-    <h2>Termine</h2>
-
-    <p style="padding: 0.04cm 0.14cm; text-align: center; line-height: 100%; margin-bottom: 15px; color: #d95a34; font-weight: bold;">
-      Nächste Altpapiersammlung - 18. Juli 2020 </p>
+      <p style="padding: 0.04cm 0.14cm; text-align: center; line-height: 100%; margin-bottom: 15px; color: #d95a34; font-weight: bold;">
+	Nächste Altpapiersammlung - 18. Juli 2020 </p>
 
 
-    <!-- Vereinstermine -->
-    <button class="collapsible">Termine Verein</button>
-    <div class="content">
-      <div style="overflow-x:auto;">
-    	<table id="t01">
-    	  <tr><td>Dienstag</td><td>07.04.2020</td><td>Ausschusssitzung b. Marxenwirt</td><td>20.00 Uhr</td></tr>
-          <tr><td>Freitag</td><td>01.05.2020</td><td>Aufbau f. Paartalcup in PTH</td><td>15.00 Uhr</td></tr>
-          <tr><td>Samstag</td><td>02.05.2020</td><td>Paartal-Cup</td><td>i. Paartalhalle	</td></tr>
-          <tr><td>Sonntag</td><td>10.05.2020</td><td>Gedenkmesse f. verstorbene Vereinsmitglieder i. S
-t.Stephan</td><td>09.00 Uhr</td></tr>
-          <tr><td>Dienstag</td><td>07.07.2020</td><td>Ausschusssitzung b. Marxenwirt</td><td>20.00 Uhr</td></tr>
-          <tr><td>Samstag</td><td>18.07.2020</td><td>Altpapiersammlung</td><td>09.00 Uhr</td></tr>
-          <tr><td>Dienstag</td><td>01.09.2020</td><td>Ausschusssitzung b. Marxenwirt</td><td>20.00 Uhr</td></tr>
-          <tr><td>Samstag</td><td>05.09.2020</td><td>Vereinsausflug</td><td>mit der Bahn	</td></tr>
-          <tr><td>Samstag</td><td>24.10.2020</td><td>Weinfest</td><td>19.30 Uhr</td></tr>
-          <tr><td>Dienstag</td><td>03.11.2020</td><td>Ausschusssitzung b. Marxenwirt</td><td>20.00 Uhr</td></tr>
-          <tr><td>Dienstag</td><td>01.12.2020</td><td>Ausschusssitzung b. Marxenwirt</td><td>20.00 Uhr</td></tr>
-          <tr><td>Samstag</td><td>05.12.2020</td><td>Weihnachtsfeier b. Grundler</td><td>18.30 Uhr</td></tr>
-    	</table>
+      <!-- Vereinstermine -->
+      <button class="collapsible">Termine Verein</button>
+      <div class="content">
+	<div style="overflow-x:auto;">
+	  <div w3-include-html="termine-verein.html"></div>
+	</div>
       </div>
-    </div>
 
-    
-    <!-- Termine Radball -->
-    <button class="collapsible">Termine Radball</button>
-    <div class="content">
-      <div style="overflow-x:auto;">
-	<table class="datesTable" valign="top" style="table-layout: fixed">
-          <colgroup>
-            <col />
-            <col />
-            <col style="min-width: 100px" />
-          </colgroup>
-          <tbody>
-
-	    <!-- Tabelle mit aktuellen und geplanten Turnieren und Veranstaltungen im Bereich Radball -->
-
-            <tr><td colspan="3"><h4>Samstag, 21.03.2020</h4></td></tr>
-            <tr><td colspan="2"><p>4. Spieltag 2. Bundesliga in Kissing, Beginn 14:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr>
-            <tr><td>Kissing 2</td><td>Pongratz-Keller</td><td></td></tr>
-	    <tr><td>Bewirtung</td><td>Pongratz-Keller</td><td></td></tr>
-	    <tr><td>Kampfgericht</td><td>Pongratz-Kieferle</td><td></td></tr>
-	    
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 21.03.2020</h4></td></tr>
-            <tr><td colspan="2"><p>4. Spieltag Landesliga Süd in Augsburg, Beginn 15:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 7</td><td>Dosch-Hartmond</td><td></td></tr>
-
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Sonntag, 22.03.2020</h4></td></tr>
-            <tr><td colspan="2"><p>1. Spieltag Bezirksliga Schwaben in Friedberg, Beginn 10.00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 8</td><td>Kieferle-Kerner</td><td>(spielfrei)</td></tr>
-	    <tr><td>Kissing 9</td><td>Doll-Grießer</td><td></td></tr>
-
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-	    <tr><td colspan="3"><h4>Freitag, 27.03.2020 bis Sonntag 29.03.2020</h4></td></tr>
-	    <tr><td colspan="2"><p>D-Kader Lehrgang in Oberhaching für U13 und U15 Mannschaften</p></td><td></td></tr>
-	    <tr><td>Kissing U13</td><td>Huber-Weimer</td><td></td></tr>
-	    <tr><td>Kissing U15</td><td>Hirsch-Treder</td><td></td></tr>
-	    
-            <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 28.03.2020</h4></td></tr>
-            <tr><td colspan="2"><p>5. Spieltag Bayernliga Elite, Beginn 15:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 3</td><td>Brunner-Keller</td><td>Bechhofen</td></tr>
-            <tr><td>Kissing 4</td><td>Grießer-Hartl</td><td>Bechhofen</td></tr>
-            <tr><td>Kissing 5</td><td>Menzinger-Menzinger</td><td>Ismaning</td></tr>
-            <tr><td>Kissing 6</td><td>Sieb-Colditz</td><td>Ismaning</td></tr>
-	    
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 04.04.2020</h4></td></tr>
-            <tr><td colspan="2"><p>5. Spieltag 2. Bundesliga in Sulgen, Beginn 18:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 1</td><td>Egarter-Keller</td><td></td></tr>
-            <tr><td>Kissing 2</td><td>Pongratz-Keller</td><td></td></tr>
-
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Sonntag, 05.04.2020</h4></td></tr>
-            <tr><td colspan="2"><p>Schwäbische Meisterschaft Nachwuchs in Mindelheim, Beginn 10.00</p></td><td></td></tr>
-	    <tr><td>Kissing U11</td><td>Menzinger-Greppmeir</td><td></td></tr>
-	    <tr><td>Kissing U13</td><td>Weimer und verschiedene Ersatzspieler</td><td></td></tr>
-	    <tr><td>Kissing U15</td><td>Hirsch-Treder</td><td></td></tr>
-	    
-            <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 25.04.2020</h4></td></tr>
-            <tr><td colspan="2"><p>&frac14;Finale zur Deutschen Meisterschaft U13/U15, Beginn 14:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing U15</td><td>Hirsch-Treder</td><td>Kissing</td></tr>
-	    <tr><td>Kissing U13</td><td>Huber-Weimer</td><td>Württemberg</td></tr>
-	    
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 25.04.2020</h4></td></tr>
-            <tr><td colspan="2"><p>5. Spieltag Landesliga Süd in Pullach, Beginn 15:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 7</td><td>Dosch-Hartmond</td><td></td></tr>
-	    
-            <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Samstag, 16.05.2020</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>&frac12;Finale zur Deutschen Meisterschaft U13/U15, Beginn 14:00 Uhr</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing U15</td><td>Hirsch-Treder</td><td></td></tr> -->
-	    <!-- <tr><td>Kissing U13 1</td><td>Huber-Weimer</td><td></td></tr> -->
-	    <!-- <tr><td>Kissing U13 2</td><td>Menzinger-Greppmeier</td><td></td></tr> -->
-	    
-            <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 16.05.2020</h4></td></tr>
-            <tr><td colspan="2"><p>6. Spieltag Bayernliga Elite in Kissing, Beginn 15:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr>
-            <tr><td>Kissing 4</td><td>Grießer-Hartl</td><td></td></tr>
-            <tr><td>Kissing 5</td><td>Menzinger-Menzinger</td><td></td></tr>
-            <tr><td>Kissing 6</td><td>Sieb-Colditz</td><td></td></tr>
-            <tr><td>Bewirtung</td><td>Menzinger, Sieb, Colditz</td><td></td></tr>
-	    
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 23.05.2020</h4></td></tr>
-            <tr><td colspan="2"><p>6. Spieltag Landesliga Süd in Stein, Beginn 15:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 7</td><td>Dosch-Hartmond</td><td></td></tr>
-	    
-            <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Samstag, 06.03. und Sonntag 07.06.2020</h4></td></tr> <\!-- Hier muss vermutlich das erste Datum korrigiert werden.-\-> -->
-            <!-- <tr><td colspan="2"><p>Deutsche Meisterschaft in U13/U15</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing U15</td><td>Hirsch-Treder</td><td></td></tr> -->
-	    <!-- <tr><td>Kissing U13 1</td><td>Huber-Weimer</td><td></td></tr> -->
-	    <!-- <tr><td>Kissing U13 2</td><td>Menzinger-Greppmeier</td><td></td></tr> -->
-	    
-            <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Samstag, 20.06.2020</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>Aufstiegsspiele zur Bayernliga, Beginn 14:00 Uhr</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 4</td><td>Grießer-Hartl</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 5</td><td>Menzinger-Menzinger</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 6</td><td>Sieb-Colditz</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 7</td><td>Dosch-Hartmond</td><td></td></tr> -->
-	    
-	    <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3"><h4>Samstag, 20.06.2020</h4></td></tr>
-            <tr><td colspan="2"><p>6. Spieltag 2. Bundesliga in Wendlingen, Beginn 18:00 Uhr</p></td><td></td></tr>
-	    <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr>
-            <tr><td>Kissing 2</td><td>Pongratz-Keller</td><td></td></tr>
-	    
-            <!--pppppppppppp <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Samstag, 27.06.2020</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>Vorrunde Aufstieg zur 2. Bundesliga, Beginn 14:00 Uhr</p></td><td></td></tr> -->
-            <!-- <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 4</td><td>Grießer-Hartl</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 5</td><td>Menzinger-Menzinger</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 6</td><td>Sieb-Colditz</td><td></td></tr> -->
-	    
-	    <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Samstag, 04.07.2020</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>Aufstiegsspiele zur Landesliga, Beginn 14:00 Uhr</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing 7</td><td>Dosch-Hartmond</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 8</td><td>Kieferle-Kerner</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 9</td><td>Doll-Grießer</td><td></td></tr> -->
-	    
-            <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>TBD</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>Finale Aufstieg zur 2. Bundesliga, Beginn 14:00 Uhr</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing 3</td><td>Brunner-Keller</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 4</td><td>Grießer-Hartl</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 5</td><td>Menzinger-Menzinger</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 6</td><td>Sieb-Colditz</td><td></td></tr> -->
-	    
-	    <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Samstag, 05.09.2020</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>Halbfinale Aufstieg zur 1. Bundesliga, Beginn 13:00 Uhr</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 2</td><td>Pongratz-Keller</td><td></td></tr> -->
-	    
-	    <!-- <tr class="skipline"><td colspan="3">&nbsp;</td></tr> -->
-            <!-- <tr><td colspan="3"><h4>Freitag, 16.10.2020</h4></td></tr> -->
-            <!-- <tr><td colspan="2"><p>Finale Aufstieg zur 1. Bundesliga</p></td><td></td></tr> -->
-	    <!-- <tr><td>Kissing 1</td><td>Egarter-Kieferle</td><td></td></tr> -->
-            <!-- <tr><td>Kissing 2</td><td>Pongratz-Keller</td><td></td></tr> -->
-          </tbody>
-        </table>
+      
+      <!-- Termine Radball -->
+      <button class="collapsible">Termine Radball</button>
+      <div class="content">
+	<div style="overflow-x:auto;">
+	  <div w3-include-html="termine-radball.html"></div>
+	</div>
       </div>
+
+
+      <!-- Termine Kunstrad -->
+      <button class="collapsible">Termine Kunstrad</button>
+      <div class="content">
+	<div style="overflow-x:auto;">
+	  <div w3-include-html="termine-kunstrad.html"></div>
+	</div>
+      </div>
+      
     </div>
-
-
-    <!-- Termine Kunstrad -->
-    <button class="collapsible">Termine Kunstrad</button>
-    <div class="content">
-      <table class="datesTable" valign="top" style="table-layout: fixed">
-        <colgroup>
-          <col />
-          <col />
-          <col style="min-width: 100px" />
-        </colgroup>
-        <tbody>
-
-          <tr><td colspan="3"><h4>Samstag, 29.02.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Sonnenstuhlpokal in Randersdacker</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-
-          <tr><td colspan="3"><h4>Samstag, 07.03.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Bay. MS Junioren U19 in Forchheim</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-
-          <tr><td colspan="3"><h4>Samstag, 02.05.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Paartal-Cup in Kissing</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-
-          <tr><td colspan="3"><h4>Samstag, 16.05.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Bay. MS Schüler U15 in Herzogenaurach</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-
-          <tr><td colspan="3"><h4>Samstag, 23.05.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Bayern-Cup Bezirksrunde in Kissing</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-
-          <tr><td colspan="3"><h4>Samstag, 11.07.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Untermain-Cup in Elsenfeld</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-	  
-	  <tr><td colspan="3"><h4>Samstag, 26.09.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Tageslehrgang in Kissing</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-	  
-	  <tr><td colspan="3"><h4>Samstag, 10.10.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Bayern-Cup-Finale Amorbach</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-	  
-	  <tr><td colspan="3"><h4>Samstag, 24.10.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Bruno-Peschka-Pokal in Friedberg</p></td><td></td></tr>
-          <tr class="skipline"><td colspan="3">&nbsp;</td></tr>
-	  
-	  <tr><td colspan="3"><h4>Samstag, 14.11.2020</h4></td></tr>
-          <tr><td colspan="2"><p>Bezirkspokal Schwaben in Kissing</p></td><td></td></tr>
-
-        </tbody>
-      </table>
-    </div>
-
 
     
 

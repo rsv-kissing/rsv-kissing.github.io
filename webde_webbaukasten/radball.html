@@ -1,34 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+<html lang="de">
   <head>
 
     <!-- Metadata -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Webauftritt des Radsportvereins Kissing"/>
     <meta name="keywords" content="Radball Kunstrad Hallenradsport Radsport"/>
 
-    <!-- Teste Bloglayout -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!-- Titel -->
     <title>Radball - Radsportverein Kissing</title>
 
     <!-- Include html -->
     <script src="js/einfuegen.js"></script>
 
-    <!-- Style for navigation bar -->
-    <link type="text/css" rel="stylesheet" href="/css/navbar.css" />
-
-    <!-- Style for page -->
-    <link type="text/css" rel="stylesheet" href="/css/pagedesign.css" />
+    <!-- Style for homepage -->
+    <link type="text/css" rel="stylesheet" href="/css/style-rsv.css" />
 
     <!-- Style for table Trainingszeiten -->
     <link type="text/css" rel="stylesheet" href="/css/trainingszeiten.css" />
     
-    <!-- Style for responsive navigation bar (only needed for responsive navbar; ACHTUNG: Drittanbietercookie -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-
-
     <style type="text/css">
       .Mannschaften {
       display: flex;
@@ -106,310 +98,311 @@
 
   </head>
 
-<!-- Begin body -->
+  <!-- Begin body -->
   <body>
 
 
     <!-- header and navigation bar -->
     <div w3-include-html="kopfleiste.html"></div>
     
-
-    <!-- Trainingszeiten Radball -->
-    <h2>Radball</h2>
-    <table>
-      <tr>
-        <td>
-          <table class="Trainingszeiten">
-            <tr>
-              <td colspan="2">Radball Junioren/Elite:</td>
-            </tr>
-            <tr style="font-weight: normal">
-              <td>Montag</td>
-              <td>19:00 - 22:00 Uhr</td>
-            </tr>
-            <tr style="font-weight: normal">
-              <td>Mittwoch</td>
-              <td>19:30 - 22:00 Uhr</td>
-            </tr>
-            <tr>
-              <td colspan="2">&nbsp;</td>
-            </tr>
-            <tr>
-              <td>Nachwuchs:</td>
-            </tr>
-            <tr style="font-weight: normal">
-              <td>Mittwoch</td>
-              <td>18:00 - 19:30 Uhr</td>
-            </tr>
-            <tr style="font-weight: normal">
-              <td>Freitag</td>
-              <td>17:00 - 19:00 Uhr</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-
-
-    <h2>
-      Mannschaften
-    </h2>
+    <div class="card">
+      <!-- Trainingszeiten Radball -->
+      <h2>Radball</h2>
+      <table>
+	<tr>
+          <td>
+            <table class="Trainingszeiten">
+              <tr>
+		<td colspan="2">Radball Junioren/Elite:</td>
+              </tr>
+              <tr style="font-weight: normal">
+		<td>Montag</td>
+		<td>19:00 - 22:00 Uhr</td>
+              </tr>
+              <tr style="font-weight: normal">
+		<td>Mittwoch</td>
+		<td>19:30 - 22:00 Uhr</td>
+              </tr>
+              <tr>
+		<td colspan="2">&nbsp;</td>
+              </tr>
+              <tr>
+		<td>Nachwuchs:</td>
+              </tr>
+              <tr style="font-weight: normal">
+		<td>Mittwoch</td>
+		<td>18:00 - 19:30 Uhr</td>
+              </tr>
+              <tr style="font-weight: normal">
+		<td>Freitag</td>
+		<td>17:00 - 19:00 Uhr</td>
+              </tr>
+            </table>
+          </td>
+	</tr>
+      </table>
+    </div>
 
 
-    <div class="Mannschaften">
-      
-      <div id="M_1" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_1');" style="background-image: url(/attachments/Image/Teams/Kissing_1_reduced.jpg)">
-	  <h1>Kissing 1</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bundesliga2_Sued_20.html">
-            <h2>2. Bundesliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
-	</div>
-	<div class="achievements">
-	  <h3>
-            Martin Egarter – Thomas Kieferle
-	  </h3>
-	  <p>                
-            2. Bundesliga seit 2010<br/>
-            2017 - 2018 Mitglied im Bundeskader<br/>                
-            <br/>
-	    2019 - 4. Platz 2. Bundesliga<br/>
-            2018 - 3. Platz 2. Bundesliga<br/>
-            2017 - 2. Platz 2. Bundesliga<br/>
-            2016 - 1. Platz 2. Bundesliga<br/> 
-            2012 - 3. Platz Deutschlandpokal U23<br/>
-            2011 - 3. Platz Deutschlandpokal U23<br/>
-            2009 - Bayerischer Meister Junioren<br/>
-            2009 - Deutscher Meister Junioren<br/>
-            2009 - Vizeeuropameister Junioren<br/>
-	  </p>
-	</div>
-      </div>
-      
-      <div id="M_2" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_2');" style="background-image: url(/attachments/Image/Teams/Kissing_2_reduced.jpg)">
-	  <h1>Kissing 2</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bundesliga2_Sued_20.html">
-            <h2>2. Bundesliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
-	</div>
-	<div class="achievements">
-	  <h3 >
-            Andreas Pongratz – Lukas Keller
-	  </h3>
-	  <p >
-            2019 - 1. Platz Bayernliga<br/>
-            2018 - 1. Platz Bayernliga<br/>
-            2017 - 12. Platz 2. Bundesliga<br/>
-            2016 - 1. Platz Bayernliga<br/>
-	    2015 - 1. Platz Bayernliga<br/>
-            2013 - Bayerischer Meister Junioren<br/>
-            2012 - 2. Bayerischer Meister Junioren<br/>
-            2011 - Bayerischer Meister Jugend<br/>
-            2009 - Bayerischer Meister Schüler A<br/>
-            2008 - Bayerischer Meister Schüler A<br/>
-            2007 - Bayerischer Meister Schüler B<br/>
-	  </p>
-	</div>
-      </div>
+    <div class="card">
+      <h2>
+	Mannschaften
+      </h2>
 
-      <div id="M_3" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_3');" style="background-image: url(/attachments/Image/Teams/Kissing_3_reduced.jpg)">
-	  <h1>Kissing 3</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-            <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
+
+      <div class="Mannschaften">
+	
+	<div id="M_1" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_1');" style="background-image: url(/attachments/Image/Teams/Kissing_1_reduced.jpg)">
+	    <h1>Kissing 1</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bundesliga2_Sued_20.html">
+              <h2>2. Bundesliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Martin Egarter – Thomas Kieferle
+	    </h3>
+	    <p>                
+              2. Bundesliga seit 2010<br/>
+              2017 - 2018 Mitglied im Bundeskader<br/>                
+              <br/>
+	      2019 - 4. Platz 2. Bundesliga<br/>
+              2018 - 3. Platz 2. Bundesliga<br/>
+              2017 - 2. Platz 2. Bundesliga<br/>
+              2016 - 1. Platz 2. Bundesliga<br/> 
+              2012 - 3. Platz Deutschlandpokal U23<br/>
+              2011 - 3. Platz Deutschlandpokal U23<br/>
+              2009 - Bayerischer Meister Junioren<br/>
+              2009 - Deutscher Meister Junioren<br/>
+              2009 - Vizeeuropameister Junioren<br/>
+	    </p>
+	  </div>
 	</div>
-	<div class="achievements">
-	  <h3>
-            Thomas Brunner - Fabian Keller
-	  </h3>
-	  <p>
-            2019 - 3. Platz Bayernliga<br/>
-            2018 - 2. Platz Bayernliga<br/>
-            2017 - 6. Platz Bayernliga<br/>
-            2016 - 5. Platz Bayernliga<br/>
-            2016 - 6. Platz Bayerische Meisterschaft<br/>
-            2015 - 7. Platz Bayernliga<br/>
-            2015 - 5. Platz Bayerische Meisterschaft<br/>
-            2014 - 2. Platz Bayernliga<br/>
-            2014 - 5. Platz Bayerische Meisterschaft<br/>
-            2013 - 1. Platz Landesliga Süd<br/>
-	  </p>
+	
+	<div id="M_2" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_2');" style="background-image: url(/attachments/Image/Teams/Kissing_2_reduced.jpg)">
+	    <h1>Kissing 2</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bundesliga2_Sued_20.html">
+              <h2>2. Bundesliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3 >
+              Andreas Pongratz – Lukas Keller
+	    </h3>
+	    <p >
+              2019 - 1. Platz Bayernliga<br/>
+              2018 - 1. Platz Bayernliga<br/>
+              2017 - 12. Platz 2. Bundesliga<br/>
+              2016 - 1. Platz Bayernliga<br/>
+	      2015 - 1. Platz Bayernliga<br/>
+              2013 - Bayerischer Meister Junioren<br/>
+              2012 - 2. Bayerischer Meister Junioren<br/>
+              2011 - Bayerischer Meister Jugend<br/>
+              2009 - Bayerischer Meister Schüler A<br/>
+              2008 - Bayerischer Meister Schüler A<br/>
+              2007 - Bayerischer Meister Schüler B<br/>
+	    </p>
+	  </div>
 	</div>
-      </div>
-      
-      <div id="M_4" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_4');" style="background-image: url(/attachments/Image/Teams/Kissing_4_reduced.jpg)">
-	  <h1>Kissing 4</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-            <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
+
+	<div id="M_3" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_3');" style="background-image: url(/attachments/Image/Teams/Kissing_3_reduced.jpg)">
+	    <h1>Kissing 3</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
+              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Thomas Brunner - Fabian Keller
+	    </h3>
+	    <p>
+              2019 - 3. Platz Bayernliga<br/>
+              2018 - 2. Platz Bayernliga<br/>
+              2017 - 6. Platz Bayernliga<br/>
+              2016 - 5. Platz Bayernliga<br/>
+              2016 - 6. Platz Bayerische Meisterschaft<br/>
+              2015 - 7. Platz Bayernliga<br/>
+              2015 - 5. Platz Bayerische Meisterschaft<br/>
+              2014 - 2. Platz Bayernliga<br/>
+              2014 - 5. Platz Bayerische Meisterschaft<br/>
+              2013 - 1. Platz Landesliga Süd<br/>
+	    </p>
+	  </div>
 	</div>
-	<div class="achievements">
-	  <h3>
-            Moritz Hartl – Michael Grießer
-	  </h3>
-	  <p>
-            2019 - 5. Platz Bayernliga<br/>
-            2018 - 7. Platz Bayernliga<br/>
-            2017 - 1. Platz Landesliga
-	  </p>
+	
+	<div id="M_4" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_4');" style="background-image: url(/attachments/Image/Teams/Kissing_4_reduced.jpg)">
+	    <h1>Kissing 4</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
+              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Moritz Hartl – Michael Grießer
+	    </h3>
+	    <p>
+              2019 - 5. Platz Bayernliga<br/>
+              2018 - 7. Platz Bayernliga<br/>
+              2017 - 1. Platz Landesliga
+	    </p>
+	  </div>
 	</div>
-      </div>
-      
-      <div id="M_5" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_5');" style="background-image: url(/attachments/Image/Teams/Kissing_7_reduced.jpg)">
-	  <h1>Kissing 5</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-            <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
+	
+	<div id="M_5" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_5');" style="background-image: url(/attachments/Image/Teams/Kissing_7_reduced.jpg)">
+	    <h1>Kissing 5</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
+              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Florian Menzinger – Norbert Menzinger
+	    </h3>
+	    <p>
+              2019 - 6. Platz Bayernliga<br/>
+              2018 - 6. Platz Bayernliga<br/>
+              2017 - 2. Platz Landesliga<br/>
+              Bayernliga von 2002 bis 2007<br/>
+              Landesliga von 2008 bis 2011 und seit 2016<br/>
+              2001 - 2. Bundesliga<br/>
+	    </p>
+	  </div>
 	</div>
-	<div class="achievements">
-	  <h3>
-            Florian Menzinger – Norbert Menzinger
-	  </h3>
-	  <p>
-            2019 - 6. Platz Bayernliga<br/>
-            2018 - 6. Platz Bayernliga<br/>
-            2017 - 2. Platz Landesliga<br/>
-            Bayernliga von 2002 bis 2007<br/>
-            Landesliga von 2008 bis 2011 und seit 2016<br/>
-            2001 - 2. Bundesliga<br/>
-	  </p>
+	
+	<div id="M_6" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_6');" style="background-image: url(/attachments/Image/Teams/Kissing_7_18_reduced.jpg)">
+	    <h1>Kissing 6</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
+              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Gunnar Sieb – Christian Colditz
+	    </h3>
+	    <p>
+              2019 - 4. Platz Bayernliga<br/>
+              2018 - 1. Platz Landesliga
+	    </p>
+	  </div>
 	</div>
-      </div>
-      
-      <div id="M_6" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_6');" style="background-image: url(/attachments/Image/Teams/Kissing_7_18_reduced.jpg)">
-	  <h1>Kissing 6</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-            <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
+	
+	<div id="M_7" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_7');" style="background-image: url(/attachments/Image/Teams/Kissing_6_18_reduced.jpg)">
+	    <h1>Kissing 7</h1>
+	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Landesliga_Sued_20.html">
+              <h2>Landesliga-Süd <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Daniel Dosch – Martin Hartmond
+	    </h3>
+	    <p>
+	      2019 - 3. Platz Landesliga<br/>
+              2018 - 7. Platz Landesliga
+	    </p>
+	  </div>
 	</div>
-	<div class="achievements">
-	  <h3>
-            Gunnar Sieb – Christian Colditz
-	  </h3>
-	  <p>
-            2019 - 4. Platz Bayernliga<br/>
-            2018 - 1. Platz Landesliga
-	  </p>
+	
+	<div id="M_8" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_8');" style="background-image: url(/attachments/Logo/logo_highres.jpg)">
+	    <h1>Kissing 8</h1>
+	    <!--<a href="http://www.radballer.info/2017/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bezirksliga_Schwaben_17.html">
+		<h2>Bezirksliga Schaben <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>-->
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Siegfried Kieferle – Robert Kerner
+	    </h3>
+	    <p>
+              Neuaufstellung
+	    </p>
+	  </div>
 	</div>
-      </div>
-      
-      <div id="M_7" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_7');" style="background-image: url(/attachments/Image/Teams/Kissing_6_18_reduced.jpg)">
-	  <h1>Kissing 7</h1>
-	  <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Landesliga_Sued_20.html">
-            <h2>Landesliga-Süd <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
+	
+	<!-- <div id="M_DUMMY" class="Mannschaft"> -->
+	<!-- </div> -->
+	
+	<div id="M_9" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_9');" style="background-image: url(/attachments/Logo/logo_highres.jpg)">
+	    <h1>Kissing 9</h1>
+	    <!--<a href="http://www.radballer.info/2017/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bezirksliga_Schwaben_17.html">
+		<h2>Bezirksliga Schaben <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>-->
+	  </div>
+	  <div class="achievements">
+	    <h3>
+              Michael Doll - Florian Grießer
+	    </h3>
+	    <p>
+              Neuaufstellung
+	    </p>
+	  </div>
 	</div>
-	<div class="achievements">
-	  <h3>
-            Daniel Dosch – Martin Hartmond
-	  </h3>
-	  <p>
-	    2019 - 3. Platz Landesliga<br/>
-            2018 - 7. Platz Landesliga
-	  </p>
+	
+	<div id="M_U11_1" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_U11_1');" style="background-image: url(/attachments/Image/Teams/U15_1_reduced.jpg)">
+	    <h1>U15 1</h1>
+	    <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_MS_U13_19.htm">
+              <h2>Bayernliga U15 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>Paul Hirsch - Luis Treder</h3>
+	    <p>
+	      2020 - 4. Platz Bayerische Meisterschaft U15<br/>
+	      2019 - 1. Platz Schwabenpokal U13<br/>
+	      2019 - 2. Platz Bayernpokal U13
+	    </p>
+	  </div>
 	</div>
-      </div>
-      
-      <div id="M_8" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_8');" style="background-image: url(/attachments/Logo/logo_highres.jpg)">
-	  <h1>Kissing 8</h1>
-	  <!--<a href="http://www.radballer.info/2017/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bezirksliga_Schwaben_17.html">
-              <h2>Bezirksliga Schaben <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>-->
+	
+	<div id="M_U11_2" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_U11_2');" style="background-image: url(/attachments/Image/Teams/U11_2_reduced.JPG)">
+	    <h1>U13 1</h1>
+	    <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_MS_U13_19.htm">
+              <h2>Bayernliga U13 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>Hannes Weimer – Tobias Huber</h3>
+	    <p>
+	      2020 - 1. Platz Bayerische Meisterschaft U13 <br/>
+	      2019 - 2. Platz Schwabenpokal<br/>
+	      2019 - 3. Platz Bayernpokal<br/>
+	      2019 - 4. Platz Bayerische Meisterschaft U13<br/>
+              2018 - 2. Platz Bodenseemeisterschaft U11<br/>
+              2018 - 5. Platz Bayernliga U13<br/>
+              2018 - Viertelfinale DM U13<br/>
+              2018 - 5. Platz Bayerische Meisterschaft U13<br/>
+              2017 - 2. Platz Schwäbische Meisterschaft
+	    </p>
+	  </div>
 	</div>
-	<div class="achievements">
-	  <h3>
-            Siegfried Kieferle – Robert Kerner
-	  </h3>
-	  <p>
-            Neuaufstellung
-	  </p>
+	
+	<div id="M_U9" class="Mannschaft">
+	  <div class="Teaser" onclick="toggle('M_U9');" style="background-image: url(/attachments/Image/Teams/U11_2019_Moritz_Paul_reduced.jpg)">
+	    <h1>U11</h1>
+	    <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_U11_19.html">
+              <h2>Bayernliga U11 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+	    </a>
+	  </div>
+	  <div class="achievements">
+	    <h3>Moritz Menzinger – Paul Greppmeir</h3>
+	    <p>
+	      2019 - 5. Platz Bayernliga U11 2019 U11<br/>
+              2018 - 2. Platz Schwäbische Meisterschaft U11
+	    </p>
+	  </div>
 	</div>
-      </div>
-      
-      <!-- <div id="M_DUMMY" class="Mannschaft"> -->
-      <!-- </div> -->
-      
-      <div id="M_9" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_9');" style="background-image: url(/attachments/Logo/logo_highres.jpg)">
-	  <h1>Kissing 9</h1>
-	  <!--<a href="http://www.radballer.info/2017/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bezirksliga_Schwaben_17.html">
-              <h2>Bezirksliga Schaben <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>-->
-	</div>
-	<div class="achievements">
-	  <h3>
-            Michael Doll - Florian Grießer
-	  </h3>
-	  <p>
-            Neuaufstellung
-	  </p>
-	</div>
-      </div>
-      
-      <div id="M_U11_1" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_U11_1');" style="background-image: url(/attachments/Image/Teams/U15_1_reduced.jpg)">
-	  <h1>U15 1</h1>
-	  <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_MS_U13_19.htm">
-            <h2>Bayernliga U15 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
-	</div>
-	<div class="achievements">
-	  <h3>Paul Hirsch - Luis Treder</h3>
-	  <p>
-	    2020 - 4. Platz Bayerische Meisterschaft U15<br/>
-	    2019 - 1. Platz Schwabenpokal U13<br/>
-	    2019 - 2. Platz Bayernpokal U13
-	  </p>
-	</div>
-      </div>
-      
-      <div id="M_U11_2" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_U11_2');" style="background-image: url(/attachments/Image/Teams/U11_2_reduced.JPG)">
-	  <h1>U13 1</h1>
-	  <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_MS_U13_19.htm">
-            <h2>Bayernliga U13 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
-	</div>
-	<div class="achievements">
-	  <h3>Hannes Weimer – Tobias Huber</h3>
-	  <p>
-	    2020 - 1. Platz Bayerische Meisterschaft U13 <br/>
-	    2019 - 2. Platz Schwabenpokal<br/>
-	    2019 - 3. Platz Bayernpokal<br/>
-	    2019 - 4. Platz Bayerische Meisterschaft U13<br/>
-            2018 - 2. Platz Bodenseemeisterschaft U11<br/>
-            2018 - 5. Platz Bayernliga U13<br/>
-            2018 - Viertelfinale DM U13<br/>
-            2018 - 5. Platz Bayerische Meisterschaft U13<br/>
-            2017 - 2. Platz Schwäbische Meisterschaft
-	  </p>
-	</div>
-      </div>
-      
-      <div id="M_U9" class="Mannschaft">
-	<div class="Teaser" onclick="toggle('M_U9');" style="background-image: url(/attachments/Image/Teams/U11_2019_Moritz_Paul_reduced.jpg)">
-	  <h1>U11</h1>
-	  <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_U11_19.html">
-            <h2>Bayernliga U11 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
-	  </a>
-	</div>
-	<div class="achievements">
-	  <h3>Moritz Menzinger – Paul Greppmeir</h3>
-	  <p>
-	    2019 - 5. Platz Bayernliga U11 2019 U11<br/>
-            2018 - 2. Platz Schwäbische Meisterschaft U11
-	  </p>
-	</div>
-      </div>
-      
+      </div>      
     </div>
 
 
@@ -425,20 +418,8 @@
     <script>
       includeHTML();
     </script>
-
-    <!-- Only needed for Responsive topbar -->
-    <!-- <script> -->
-    <!--   function myFunction() { -->
-    <!--   var x = document.getElementById("myTopnav"); -->
-    <!--   if (x.className === "topnav") { -->
-    <!--   x.className += " responsive"; -->
-    <!--   } else { -->
-    <!--   x.className = "topnav"; -->
-    <!--   } -->
-    <!--   } -->
-    <!-- </script> -->
     
   </body>
 
 </html>
-  
+

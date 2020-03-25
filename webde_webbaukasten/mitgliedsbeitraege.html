@@ -1,29 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de-DE" lang="de-DE">
+<html lang="de">
   <head>
 
     <!-- Metadata -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Webauftritt des Radsportvereins Kissing"/>
     <meta name="keywords" content="Radball Kunstrad Hallenradsport Radsport"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!-- Titel -->    
     <title>Mitgliedsbeiträge - Radsportverein Kissing</title>
 
+    
     <!-- Include html -->
     <script src="js/einfuegen.js"></script>
 
-    <!-- Style for navigation bar -->
-    <link type="text/css" rel="stylesheet" href="/css/navbar.css" />
+    <!-- Style for homepage -->
+    <link type="text/css" rel="stylesheet" href="/css/style-rsv.css" />
 
-    <!-- Style for page -->
-    <link type="text/css" rel="stylesheet" href="/css/pagedesign.css" />
-
-    
-    <!-- Style for responsive navigation bar (only needed for responsive navbar; ACHTUNG: Drittanbietercookie -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <style>
       table {
@@ -42,38 +37,41 @@
     <!-- header and navigation bar -->
     <div w3-include-html="kopfleiste.html"></div>
 
-    
-    <h2>Mitgliedsbeiträge</h2>
+
+    <div class="card">
+      
+      <h2>Mitgliedsbeiträge</h2>
 
 
-    <table>
-      <colgroup>
-        <col style="width: 350px"/>
-        <col />
-      </colgroup>
-      <tr>
-        <td>Erwachsenes Mitglied</td><td>54,00 &euro;</td>
-      </tr>
-      <tr>
-        <td>Ehepartner / Partner (bei gleichem Wohnsitz)</td><td>30,00 &euro;</td>
-      </tr>
-      <tr>
-        <td>Kinder / Jugendliche bis 18 Jahre</td><td>30,00 &euro;</td>
-      </tr>
-      <tr>
-        <td>Ehrenmitglieder</td><td>30,00 &euro;</td>
-      </tr>
-      <tr>
-        <td>Familienbeitrag<br/>(Erwachsene und eigene Kinder bis 18 Jahre)</td><td>100,00 &euro;</td>
-      </tr>
-    </table>
-    <p>&nbsp;</p>
-    <p>Stichtag für die Beitragsrechnung ist jeweils der 01. Januar des Jahres</p>
-    <p>Gläubiger-ID-Nummer: DE69ZZZ00000893552</p>
-    <p>Einzugstermin: 01. Februar des Jahres*</p>
-    <p>*oder am nächsten Bankenarbeitstag</p>
+      <table>
+	<colgroup>
+          <col style="width: 350px"/>
+          <col />
+	</colgroup>
+	<tr>
+          <td>Erwachsenes Mitglied</td><td>54,00 &euro;</td>
+	</tr>
+	<tr>
+          <td>Ehepartner / Partner (bei gleichem Wohnsitz)</td><td>30,00 &euro;</td>
+	</tr>
+	<tr>
+          <td>Kinder / Jugendliche bis 18 Jahre</td><td>30,00 &euro;</td>
+	</tr>
+	<tr>
+          <td>Ehrenmitglieder</td><td>30,00 &euro;</td>
+	</tr>
+	<tr>
+          <td>Familienbeitrag<br/>(Erwachsene und eigene Kinder bis 18 Jahre)</td><td>100,00 &euro;</td>
+	</tr>
+      </table>
+      <p>&nbsp;</p>
+      <p>Stichtag für die Beitragsrechnung ist jeweils der 01. Januar des Jahres</p>
+      <p>Gläubiger-ID-Nummer: DE69ZZZ00000893552</p>
+      <p>Einzugstermin: 01. Februar des Jahres*</p>
+      <p>*oder am nächsten Bankenarbeitstag</p>
 
 
+    </div>
     
     <!-- Fußleiste -->
     <div w3-include-html="fussleiste.html"></div>
@@ -86,20 +84,7 @@
       includeHTML();
     </script>
 
-
-    <!-- Only needed for Responsive topbar -->
-    <!-- <script> -->
-    <!--   function myFunction() { -->
-    <!--   var x = document.getElementById("myTopnav"); -->
-    <!--   if (x.className === "topnav") { -->
-    <!--   x.className += " responsive"; -->
-    <!--   } else { -->
-    <!--   x.className = "topnav"; -->
-    <!--   } -->
-    <!--   } -->
-    <!-- </script> -->
     
   </body>
 
 </html>
-
