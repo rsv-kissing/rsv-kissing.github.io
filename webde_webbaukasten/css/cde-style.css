@@ -1,0 +1,671 @@
+/*
+Stylesheet fÃ¼r die CdE-Homepage
+
+:Author: Roland Koebler <roland@cde-muenchen.de>
+*/
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('SourceSansPro.woff2') format('woff2');
+}
+
+body {
+    margin: 0 auto;
+    margin-bottom: 2ex;
+    max-width: 1100px;
+    background: #96a2af;
+    background-image: url("bg-muster-7.png");
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #222222;
+}
+
+/*========================================
+* default styles */
+img {
+    border-style: none;
+    border-width: 0px;
+    vertical-align: middle;
+}
+main img {
+    max-width: 100%;
+}
+
+a:link {
+    color: #0000a0;
+}
+a:visited {
+    color: #000040;
+    text-decoration: underline;
+}
+a:hover {
+    background-color: rgba(255, 186, 3, 0.4);
+    transition: 0.2s;
+}
+
+/* add extlink- or lock-icon before external links */
+a[href^="https:"], a[href^="http:"], a[href^="www"] {
+    background: transparent url('extlink.png') 0% 50% no-repeat;
+    padding-left: 12px;
+}
+a[href^="https://www.cde-ev.de/"],a [href="https://www.cde-ev.de"],
+a[href^="www.cde-ev.de/"], a[href="www.cde-ev.de"] {
+    background: transparent;
+    padding-left: 0px;
+}
+a[href^="https://wiki.cde-ev.de/"], a[href="https://wiki.cde-ev.de"],
+a[href^="wiki.cde-ev.de/"],a[href ="wiki.cde-ev.de"],
+a[href^="https://db"], .lock {
+    background: transparent url('lock.png') 0% 50% no-repeat;
+    padding-left: 15px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+hr {
+    border: 1px solid #c0c0c0;
+}
+
+/* emulated horizontal rule with embedded text */
+.hr-text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hr-text > span {
+    position: relative;
+    display: inline-block;
+    margin-left: 3ex;
+}
+
+.hr-text > span:before,
+.hr-text > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 2px;
+    background: #c0c0c0;
+}
+.hr-text > span:before {
+    right: 100%;
+    margin-right: 1ex;
+}
+.hr-text > span:after {
+    left: 100%;
+    margin-left: 1ex;
+}
+
+/*========================================
+* site layout
+*/
+
+/* box containing header, menu and content */
+#box {
+    position: relative;
+    margin: 2ex;
+    margin-top: 3ex;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.4);
+}
+
+/* show colored dots on the top-left */
+#box::before {
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    height: 420px;
+    width: 50px;
+    content: " ";
+    background: url(dots.svg);
+    transform: rotate(180deg);
+}
+/* show colored dots on the bottom-right */
+#box::after {
+    position: absolute;
+    bottom: 10px;
+    right: -60px;
+    height: 420px;
+    width: 50px;
+    content: " ";
+    background: url(dots.svg);
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*----------------------------------------
+* header
+*/
+
+header a:link, header a:visited {
+    color: black;
+    text-decoration: none;
+}
+header a:link:hover {
+    background-color: inherit;
+}
+
+header {
+    display: block;
+    position: relative;
+    min-height: 9ex;
+}
+
+#header-wrapper {
+    position: relative;
+    padding: 0 0 11.5%;
+}
+
+#header-bg {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#header-bg img {
+    min-width: 100%;
+}
+
+#banner {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 8ex;
+    padding: 1.5ex 2ex 0.5ex 1ex;
+    background-color: rgba(255,255,255,0.6);
+}
+#banner-logo {
+    height: 8ex;
+}
+#banner-name {
+    display: inline-block;
+    margin-left: 1ex;
+    vertical-align: top;
+    white-space: normal;
+    font-size: 120%;
+}
+
+/*----------------------------------------
+* page: menu + content */
+
+#page {
+    background-color: #ffffff;
+    min-height: 500px; /* TODO: which height? */
+}
+
+/*----------------------------------------
+* footer */
+footer a:first-child {
+    margin-left: 2ex;
+}
+
+/*========================================
+* navigation / menu */
+
+/*----------------------------------------
+* navigation-bar: contains hamburger-icon and breadcrumb for small screens */
+#nav-bar {
+    padding: 1ex;
+    background-color: #dddddd;
+}
+#nav-bar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* hide navigation-bar by default; it's only used on small screens */
+#nav-bar, #menu-checkbox {
+    display: none;
+}
+
+/* menu-button */
+.menu-button {
+    float: left;
+    /* display: inline-block; */
+    padding-right: 1ex;
+    width: 30px;
+    vertical-align: middle;
+    margin: auto;
+}
+/* draw hamburger-icon with 3 spans and pure CSS */
+.menu-button span {
+    display: block;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #404040;
+    border-radius: 2.5px;
+    transition: transform .3s, opacity .3s;
+}
+.menu-button span:nth-child(3) {
+    margin-bottom: 0;
+}
+/* animate hamburger-icon on click */
+#menu-checkbox:checked ~ #nav-bar .menu-button span:nth-child(1) { transform: translate(0, 10px) rotate(45deg); }
+#menu-checkbox:checked ~ #nav-bar .menu-button span:nth-child(2) { opacity: 0;}
+#menu-checkbox:checked ~ #nav-bar .menu-button span:nth-child(3) { transform: translate(0,-10px) rotate(-45deg); }
+#menu-checkbox:checked ~ #nav-bar .menu-button span { background-color: gray; }
+
+/*----------------------------------------
+* menu
+* (using radiobuttons to make sure exactly 1 top-level is expanded with pure CSS) */
+#menu {
+    display: block;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 15em;
+    list-style: none;
+}
+
+#menu input {
+    display: none;
+}
+
+#menu li {
+    white-space: nowrap;
+}
+#menu li ul {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #f6f6f6;
+}
+#menu li label {
+    display: block;
+    padding-left: 1em;
+    padding-top: 1ex;
+    padding-bottom: 1ex;
+    background-color: #dddddd;
+    font-weight: bold;
+}
+#menu :checked + label {
+    background-color: rgba(255, 186, 3, 0.6);
+}
+
+#menu a {
+    display: block;
+    padding-left: 2em;
+    line-height: 3.5ex;
+    text-decoration: none;
+}
+
+#menu label:hover {
+    cursor: pointer;
+}
+#menu a:hover {
+    background-color: rgba(255, 186, 3, 0.3);
+}
+
+/* open/close transitions */
+#menu li ul {
+    max-height: 0;
+    transition: max-height 0.25s ease;
+    overflow: hidden;
+}
+#menu :checked ~ ul {        max-height: 20ex !important; }
+#menu :checked ~ ul.items1 { max-height: calc(1*3.5ex) !important; }
+#menu :checked ~ ul.items2 { max-height: calc(2*3.5ex) !important; }
+#menu :checked ~ ul.items3 { max-height: calc(3*3.5ex) !important; }
+#menu :checked ~ ul.items4 { max-height: calc(4*3.5ex) !important; }
+#menu :checked ~ ul.items5 { max-height: calc(5*3.5ex) !important; }
+#menu :checked ~ ul.items6 { max-height: calc(6*3.5ex) !important; }
+#menu :checked ~ ul.items7 { max-height: calc(7*3.5ex) !important; }
+#menu :checked ~ ul.items8 { max-height: calc(8*3.5ex) !important; }
+#menu :checked ~ ul.items9 { max-height: calc(9*3.5ex) !important; }
+
+/* limit news-entry to 50ex + optional scrollbar */
+#menu :checked ~ ul#news_side { max-height: 50ex !important; overflow: auto; }
+
+/* opened/closed indicator */
+#menu li label span {
+    display: inline-block;
+    margin-left: 0.2em;
+    margin-right: 0.6em;
+    border-left:   0.4em solid #656565;
+    border-right:  0;
+    border-bottom: 0.4em solid transparent;
+    border-top:    0.4em solid transparent;
+    width: 0;
+    height: 0;
+}
+#menu :checked + label span {
+    margin-left: 0em;
+    margin-right: 0.4em;
+    border-left:   0.4em solid transparent !important;
+    border-right:  0.4em solid transparent !important;
+    border-top:    0.4em solid #656565 !important;
+    border-bottom: 0 !important;
+    padding-bottom: 0.15em;
+}
+
+/* lock image */
+#menu a.navlock::before {
+    content: '';
+    display: inline-block;
+    background-image: url("lock.png");
+    margin-left: -17px;
+    margin-right: 5px;
+    width: 12px;
+    height: 15px;
+}
+
+/*----------------------------------------
+* breadcrumb */
+.breadcrumb {
+    margin-left: 15em;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0ex;
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;
+    min-width: 10em;
+    background-color: #dddddd;
+    list-style: none;
+}
+.breadcrumb li {
+    display: inline-block;
+}
+.breadcrumb li::before {
+    content: 'Â»';
+    display: inline-block;
+    padding-left: 0.5ex;
+    padding-right: 0.5ex;
+}
+
+/* responsive breadcrumb besides menu-button */
+#nav-bar .breadcrumb {
+    display: none;
+    min-width: 5em;
+    background-color: transparent;
+    background-image: none;
+}
+
+/*----------------------------------------
+* news: floating list of news */
+/* make news box more narrow on smaller screens. 43% are 300px for wide screens. */
+#news-wrapper {
+    float: right;
+    /* #contents has an 1.5ex right padding. */
+    padding: 1.5ex 0 1.5ex 1.5ex;
+    max-width: 40%;
+    background-color: white;
+}
+#news-wrapper > div {
+    max-width: 300px;
+}
+#news-footer {
+    display: none;
+    width: 100%;
+}
+
+.news-box {
+    background-color: rgba(255, 186, 3, 0.3);
+}
+.news-content {
+    padding: 0 1ex;
+}
+.news-content ul {    
+    z-index: 1;
+    margin: 0 0 0.5ex;
+    padding-left: 1ex;
+    position: relative;
+	list-style: none;
+}
+.news-content ul li:before {
+	content: "Â·";
+	position: absolute;
+	left: 0;
+}
+.news-content p {
+    margin: 0 !important;
+}
+
+/*----------------------------------------
+* main contents */
+#contents {
+    margin-left: 15em;
+    padding: 0 1.5ex 1.5ex;
+    min-width: 10em;
+    overflow: hidden;
+}
+#contents-text {
+    max-width: 700px;
+    margin: 1.5ex auto 3ex;
+}
+
+#contents h1 {
+    font-size: 185%;
+}
+h1 {
+    margin-top: 0.75ex;
+    margin-bottom: 0;
+}
+hr, h2, h3, h4, h5 {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+h1.backlink {
+    margin-bottom: 0;
+}
+h1 a {
+    text-decoration: none;
+}
+
+#contents p, ul {
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+#contents li > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contents a:link {
+    color: #0000a0;
+}
+#contents a:visited {
+    color: #000040;
+    text-decoration: underline;
+}
+#contents a:hover {
+    background-color: rgba(255, 186, 3, 0.4);
+}
+
+div.toc > ul > li:first-child {
+    display: none;
+}
+
+ul {
+    padding-left: 2ex;
+}
+
+dl {
+    margin-top: 0;
+}
+dt {
+    font-weight: bold;
+    margin-top: 0.5ex;
+    padding: 0 0.5ex;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+dt::after {
+    content: ":";
+}
+dd p:first-child {
+    margin-top: 0 !important;
+}
+
+code, pre {
+    background-color: #e0e0e0;
+}
+pre {
+    margin-left: 2ex;
+    padding: 0.5ex 0.25ex;
+}
+
+/* event info-box */
+.event-info {
+    margin: 1ex;
+}
+.event-info dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    padding-top: 0.5ex;
+    margin: 0;
+}
+.event-info dt {
+    grid-column: 1;
+    margin-top: 0;
+    padding: 0.25ex;
+    padding-right: 2ex;
+    background-color: #e0e0e0;
+}
+.event-info dd {
+    grid-column: 2;
+    margin-left: 2ex;
+}
+
+/*========================================
+* @media / responsive design */
+
+/* add a margin on the left to match the scrollbar if one is shown */
+@media (min-width: 1201px) {
+    html {
+        margin-left: calc(100vw - 100%);
+        margin-right: 0;
+    }
+}
+
+/* <= 1200 px: remove decoration to prevent hor. scrollbar */
+@media (max-width: 1200px) {
+    /* remove colored dots on top-left + bottom-right */
+    #box::before {
+        width: 0;
+        display: none;
+    }
+    #box::after {
+        width: 0;
+        display: none;
+    }
+    /* reduce page-margin */
+    #box {
+        margin-top: 2ex;
+    }
+}
+
+/* <= 900 px: hide menu + show hamburger-icon ***/
+@media (max-width: 900px) {
+    /* reduce header size */
+    header {
+        min-height: 47px;
+    }
+    #banner {
+        height: 44px;
+        padding-bottom: 0.75ex;
+    }
+    #banner-logo {
+        /* height: 6ex; */
+        height: 47px;
+        vertical-align: bottom;
+    }
+    #banner-name {
+        font-size: 100%;
+    }
+
+    /* hide menu, show nav-bar + hamburger-icon */
+    /* - show breadcrumb-bar with integrated hamburger-icon */
+    #nav-bar {
+        display: block;
+    }
+    #nav-bar .breadcrumb {
+        display: inline;
+        vertical-align: middle;
+    }
+    /* - hide default breadcrumb-bar */
+    .breadcrumb {
+        margin-left: 0;
+        display: none;
+    }
+    /* - menu: full-width, hide by default */
+    #menu {
+        visibility: hidden; position: absolute; left: -9999px;
+        float: none;
+        width: 100%;
+    }
+    /* - menu: show when hamburger-icon is clicked */
+    input#menu-checkbox:checked ~ #menu {
+        visibility: visible; position: static;
+    }
+
+    /* reduce page margins */
+    #box {
+        margin-top: 1.5ex;
+    }
+    #page {
+        min-height: 0;
+    }
+    #contents {
+        margin-left: 0;
+    }
+    #contents-text {
+        margin-bottom: 2ex;
+    }
+}
+
+/* <= 650 px: Content becomes too narrow for floating news */
+@media (max-width: 650px) {
+    #news-wrapper {
+        display: none;
+    }
+
+    #news-footer {
+        display: block;
+    }
+}
+
+/* <= 500 px: no more page margins ***/
+@media (max-width: 500px) {
+    /* remove page margins */
+    #box {
+        margin-top: 0;
+        margin-left: 0ex;
+        margin-right: 0ex;
+        min-height: 0;
+    }
+
+    /* reduce header even more */
+    header {
+        min-height: 0;
+    }
+    #header-wrapper {
+        padding: 0;
+    }
+    #header-bg {
+        display: none;
+    }
+    header a {
+        display: block;
+        background-image: url(bannerbg-medium.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #banner {
+        position: relative;
+        padding-top: 1ex;
+        height: inherit;
+    }
+}
+
+/*======================================*/

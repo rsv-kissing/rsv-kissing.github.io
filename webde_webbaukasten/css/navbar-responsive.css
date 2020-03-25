@@ -1,0 +1,135 @@
+/*
+:Author: Roland Koebler <roland@cde-muenchen.de>
+*/
+
+/*========================================
+* navigation / menu */
+
+/*----------------------------------------
+ * navigation-bar: contains hamburger-icon and breadcrumb for small screens */
+
+/* body {margin: 0;} */
+#nav-bar {
+    padding: 1ex;
+    background-color: #333;
+}
+#nav-bar::after {
+    content: "";
+    Display: block; /*table;*/
+    clear: both;
+}
+
+/* hide navigation-bar by default; it's only used on small screens */
+#nav-bar, #menu-checkbox {
+    display: none;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* menu-button */
+.menu-button {
+    float: left;
+    /* display: inline-block; */
+    padding-right: 1ex;
+    width: 30px;
+    vertical-align: middle;
+    margin: auto;
+}
+/* draw hamburger-icon with 3 spans and pure CSS */
+.menu-button span {
+    display: block;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 2.5px;
+    transition: transform .3s, opacity .3s;
+}
+.menu-button span:nth-child(3) {
+    margin-bottom: 0;
+}
+/* animate hamburger-icon on click */
+#menu-checkbox:checked ~ #nav-bar .menu-button span:nth-child(1) { transform: translate(0, 10px) rotate(45deg); }
+#menu-checkbox:checked ~ #nav-bar .menu-button span:nth-child(2) { opacity: 0;}
+#menu-checkbox:checked ~ #nav-bar .menu-button span:nth-child(3) { transform: translate(0,-10px) rotate(-45deg); }
+#menu-checkbox:checked ~ #nav-bar .menu-button span { background-color: white; }
+
+/*----------------------------------------
+* menu */
+#menu {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 0px 0px 4px 4px;
+}
+
+#menu li {
+    /* white-space: nowrap; */
+    float:left;
+}
+
+#menu li.rechts { /*meine änderung*/
+    float: right;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    text-align: center; /*meine änderung*/
+    color: white;
+    padding: 14px 16px; /*meine änderung*/
+}
+
+#menu a:hover {
+    background-color: green;
+}
+
+
+/*========================================
+* @media / responsive design */
+
+
+/* <= 900 px: hide menu + show hamburger-icon ***/
+@media (max-width: 1150px) {
+    /* reduce header size */
+    header {
+        min-height: 47px;
+    }
+
+    #nav-bar {
+        display: block;
+    }
+
+    /* - menu: full-width, hide by default */
+    #menu {
+        visibility: hidden; position: absolute; left: -9999px;
+        float: none;
+        width: 100%;
+    }
+
+    /* new colors */
+    #menu a {
+	background-color: #f1f1f1;
+	color: black;
+    }
+
+    /* new colors */
+    #menu a:hover {
+	color: white;
+    }
+
+    /* vertical instead of horizontal orientation */
+    #menu li, #menu li.rechts {
+	float: none;
+    }
+    
+    /* - menu: show when hamburger-icon is clicked */
+    input#menu-checkbox:checked ~ #menu {
+        visibility: visible; position: static;
+    }
+}
+
+/*======================================*/
