@@ -279,11 +279,6 @@ header {
     to {opacity: 1}
 }
 
-/* @media screen and (max-width: 800px) { */
-/*     .fade { */
-/* 	height:85vw; */
-/*     } */
-/* } */
 /* Ende Slideshow */
 
 
@@ -377,7 +372,7 @@ header {
 
     /* slideshow: adjust height since there is only one column left */
     .fade {
-	height:85vw;
+	height:92vw;
     }
 }
 
