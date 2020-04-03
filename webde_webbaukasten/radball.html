@@ -51,7 +51,8 @@
       color: white;
       margin: 0;
       padding: 0;
-      text-align: right;
+      padding-left: 15px;
+      text-align: left;
       width: 100%;
       }
 
@@ -64,12 +65,17 @@
       margin: 0;
       display: block;
       padding: 0;
-      text-align: right;
+      text-align: left;
       width: 100%;
       line-height: 110%;
       border-radius: 0px 0px 4px 4px;
       }
 
+      .Mannschaft a[href^="https:"], a[href^="http:"], a[href^="www"] {
+      background: transparent url('../extlink.png') 1% 50% no-repeat;
+      padding-left: 15px;
+      }
+      
       .achievements { display: none }
     </style>
 
@@ -86,14 +92,15 @@
       }
       }
 
-      function toggleAll() {
-      var elements = document.getElementsByClassName("Mannschaft");
-      for (var e in elements) {
-      if (elements.hasOwnProperty(e)) {
-      toggle(e);
-      }
-      }
-      }
+      <!-- function toggleAll() { -->
+      <!-- var elements = document.getElementsByClassName("Mannschaft"); -->
+      <!-- for (var e in elements) { -->
+      <!-- if (elements.hasOwnProperty(e)) { -->
+      <!-- toggle(e); -->
+      <!-- } -->
+      <!-- } -->
+      <!-- } -->
+
     </script>
 
   </head>
@@ -145,10 +152,10 @@
 
 
     <div class="card">
+
       <h2>
 	Mannschaften
       </h2>
-
 
       <div class="Mannschaften">
 	
@@ -156,7 +163,7 @@
 	  <div class="Teaser" onclick="toggle('M_1');" style="background-image: url(/attachments/Image/Teams/Kissing_1_reduced.jpg)">
 	    <h1>Kissing 1</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bundesliga2_Sued_20.html">
-              <h2>2. Bundesliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>2. Bundesliga &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -166,7 +173,6 @@
 	    <p>                
               2. Bundesliga seit 2010<br/>
               2017 - 2018 Mitglied im Bundeskader<br/>                
-              <br/>
 	      2019 - 4. Platz 2. Bundesliga<br/>
               2018 - 3. Platz 2. Bundesliga<br/>
               2017 - 2. Platz 2. Bundesliga<br/>
@@ -184,7 +190,7 @@
 	  <div class="Teaser" onclick="toggle('M_2');" style="background-image: url(/attachments/Image/Teams/Kissing_2_reduced.jpg)">
 	    <h1>Kissing 2</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bundesliga2_Sued_20.html">
-              <h2>2. Bundesliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>2. Bundesliga &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -211,7 +217,7 @@
 	  <div class="Teaser" onclick="toggle('M_3');" style="background-image: url(/attachments/Image/Teams/Kissing_3_reduced.jpg)">
 	    <h1>Kissing 3</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -237,7 +243,7 @@
 	  <div class="Teaser" onclick="toggle('M_4');" style="background-image: url(/attachments/Image/Teams/Kissing_4_reduced.jpg)">
 	    <h1>Kissing 4</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -256,7 +262,7 @@
 	  <div class="Teaser" onclick="toggle('M_5');" style="background-image: url(/attachments/Image/Teams/Kissing_7_reduced.jpg)">
 	    <h1>Kissing 5</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -278,7 +284,7 @@
 	  <div class="Teaser" onclick="toggle('M_6');" style="background-image: url(/attachments/Image/Teams/Kissing_7_18_reduced.jpg)">
 	    <h1>Kissing 6</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bayernliga_20.html">
-              <h2>Bayernliga <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -296,7 +302,7 @@
 	  <div class="Teaser" onclick="toggle('M_7');" style="background-image: url(/attachments/Image/Teams/Kissing_6_18_reduced.jpg)">
 	    <h1>Kissing 7</h1>
 	    <a href="http://www.radballer.info/2020/Ergebnisse/Deutschland/Meisterschaft/Bayern_Landesliga_Sued_20.html">
-              <h2>Landesliga-Süd <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Landesliga-Süd &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -314,7 +320,7 @@
 	  <div class="Teaser" onclick="toggle('M_8');" style="background-image: url(/attachments/Logo/logo_highres.jpg)">
 	    <h1>Kissing 8</h1>
 	    <!--<a href="http://www.radballer.info/2017/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bezirksliga_Schwaben_17.html">
-		<h2>Bezirksliga Schaben <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+		<h2>Bezirksliga Schaben &nbsp;</h2>
 	    </a>-->
 	  </div>
 	  <div class="achievements">
@@ -334,7 +340,7 @@
 	  <div class="Teaser" onclick="toggle('M_9');" style="background-image: url(/attachments/Logo/logo_highres.jpg)">
 	    <h1>Kissing 9</h1>
 	    <!--<a href="http://www.radballer.info/2017/Ergebnisse/Deutschland/Meisterschaft/Bayern_Bezirksliga_Schwaben_17.html">
-		<h2>Bezirksliga Schaben <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+		<h2>Bezirksliga Schaben &nbsp;</h2>
 	    </a>-->
 	  </div>
 	  <div class="achievements">
@@ -351,7 +357,7 @@
 	  <div class="Teaser" onclick="toggle('M_U11_1');" style="background-image: url(/attachments/Image/Teams/U15_1_reduced.jpg)">
 	    <h1>U15 1</h1>
 	    <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_MS_U13_19.htm">
-              <h2>Bayernliga U15 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga U15 &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -368,7 +374,7 @@
 	  <div class="Teaser" onclick="toggle('M_U11_2');" style="background-image: url(/attachments/Image/Teams/U11_2_reduced.JPG)">
 	    <h1>U13 1</h1>
 	    <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_MS_U13_19.htm">
-              <h2>Bayernliga U13 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga U13 &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -391,7 +397,7 @@
 	  <div class="Teaser" onclick="toggle('M_U9');" style="background-image: url(/attachments/Image/Teams/U11_2019_Moritz_Paul_reduced.jpg)">
 	    <h1>U11</h1>
 	    <a href="http://www.radballer.info/2019/Ergebnisse/Deutschland/Meisterschaft/Bayern_U11_19.html">
-              <h2>Bayernliga U11 <i class="fa fa-external-link" aria-hidden="true"></i>&nbsp;</h2>
+              <h2>Bayernliga U11 &nbsp;</h2>
 	    </a>
 	  </div>
 	  <div class="achievements">
@@ -402,7 +408,9 @@
 	    </p>
 	  </div>
 	</div>
-      </div>      
+	
+      </div>      <!-- Mannschaften -->
+
     </div>
 
 
