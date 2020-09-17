@@ -251,6 +251,7 @@ header {
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    max-height: 1000px;
     overflow:hidden;
     position: relative;
     margin: auto;
