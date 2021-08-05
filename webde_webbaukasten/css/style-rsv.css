@@ -248,6 +248,13 @@ header {
 * Slideshow
 */
 
+.slideshow-card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -328,6 +335,11 @@ header {
     /* - menu: show when hamburger-icon is clicked */
     input#menu-checkbox:checked ~ #menu {
         visibility: visible; position: static;
+    }
+
+    /* Don't show slideshow on small screens */
+    .slideshow-card {
+	display: none;
     }
 }
 
