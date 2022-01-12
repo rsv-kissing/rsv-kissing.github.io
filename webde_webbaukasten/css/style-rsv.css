@@ -53,37 +53,21 @@ a[href^="https:"], a[href^="http:"], a[href^="www"] {
 * header
 */
 
-header a:link, header a:visited {
+.header {
+    display: block;
+    position: relative;
+    min-height: 17ex;
+    background: #009900;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.header a:link, .header a:visited {
     color: black;
     text-decoration: none;
 }
-header a:link:hover {
+
+.header a:link:hover {
     background-color: inherit;
-}
-
-header {
-    display: block;
-    position: relative;
-    min-height: 16ex;
-}
-
-#header-wrapper {
-    /* position: relative; */
-    padding: 0 0 11.5%;
-}
-
-#header-bg {
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: 4px 4px 0px 0px;
-}
-#header-bg img {
-    min-width: 100%;
 }
 
 #banner {
@@ -95,9 +79,11 @@ header {
     background-color: rgba(255,255,255,1);
     border-radius: 0px 4px 0px 0px;
 }
+
 #banner-logo {
     height: 12ex;
 }
+
 #banner-name {
     display: inline-block;
     margin-left: 1ex;
@@ -359,7 +345,7 @@ header {
     }
 
     /* reduce header even more */
-    header {
+    .header {
         min-height: 0;
     }
     #header-wrapper {
@@ -368,9 +354,9 @@ header {
     #header-bg {
         display: none;
     }
-    header a {
+    .header a {
         display: block;
-        background-image: url(bannerbg-medium.jpg);
+        /* background-image: url(bannerbg-medium.jpg); */
         background-repeat: no-repeat;
         background-size: cover;
     }
