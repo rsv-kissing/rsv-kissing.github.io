@@ -13,6 +13,8 @@ Aktualisieren der Webseite:
 Webserver nginx:
 - Konfigurationsdatei in /etc/nginx angepasst mittels sudo emacs nginx.conf
   server localhost 8080 eingefügt.
+- Konfigurationsdateien in /etc/nginx/sites-available anpassen
+- sudo nginx -s reload
 
 
 
