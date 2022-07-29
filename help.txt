@@ -1,0 +1,26 @@
+Aktualisieren der Webseite:
+- git pull
+- Fotos mit gimp auf eine Höhe von 550px skalieren
+  und unter /attachments/Image einmal normal und einmal skaliert ablegen
+- Dateien editieren
+- Test über localhost:8080
+- git add / commit / push
+- pipeline auf bitbucket.org
+
+
+
+
+Webserver nginx:
+- Konfigurationsdatei in /etc/nginx angepasst mittels sudo emacs nginx.conf
+  server localhost 8080 eingefügt.
+
+
+
+Neue Webseite:
+- Farbschema:
+
+- Diashow:
+
+- Auslagern der einzelnen Terminlisten in eigene Dateien
+
+- Probetraining Info
