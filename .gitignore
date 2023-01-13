@@ -218,3 +218,6 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+# .directory files of some filesystems / filemanagers
+.directory
