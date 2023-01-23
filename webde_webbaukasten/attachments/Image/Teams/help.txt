@@ -1,0 +1,1 @@
+Bilder sollten vertikal auf 250px und horizontal auf 300px zugeschnitten werden. 
